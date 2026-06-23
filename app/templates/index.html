@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BATMAN</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="{{ url_for('static', filename='images/logo_5.png') }}" alt="Logo Batman" />
+            <nav>
+                <ul>
+                    <a href="{{ url_for('home') }}">
+                        <li>Home</li> 
+                    </a>
+                    <a href="{{ url_for('contato') }}">
+                        <li>Contato</li>
+                    </a>                                                                         
+                    <a href="{{ url_for('fotos') }}">
+                        <li>Fotos</li>
+                    </a>
+                    <a href="{{ url_for('comentarios') }}">
+                        <li>Comentários</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="banner"></div>
+        
+        <div id="trailler_container">
+            <div class="content">
+                <video controls class="trailer">
+                    <source src="{{ url_for('static', filename='images/trailer_batman.mp4') }}" type="video/mp4">
+                    Seu navegador não tem suporte para esse video
+                </video>
+                <div id="sinopse">
+                    <p class="description">
+                        Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança.
+                    </p>
+                    <button class="button">Comprar ingresso</button>
+                </div>
+            </div>
+            
+            <div class="actors-cards-container">
+                <div class="cards-content">
+                    <div class="card banner-1">Robert Pattinson - Batman</div>
+                    <div class="card banner-2">Zoe Kravitz - Mulher gato</div>
+                    <div class="card banner-3">Jeffery Wright - Gordon</div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <img id="logo_5" src="{{ url_for('static', filename='images/logo_5.png') }}" alt="Logo Batman">
+            <span>Desenvolvido por Manoel de Souza Sá</span>
+            <span><small>Todos os direitos reservados ©</small></span>
+            <nav class="footer-navigation">
+                <ul class="footer-list">
+                    <a href="./index.html">
+                        <li>Home</li> 
+                    </a>
+                    <a href="./contato.html">
+                        <li>Contato</li>
+                    </a>                                                                         
+                    <a href="./fotos.html">
+                        <li>Fotos</li>
+                    </a>
+                    <a href="./comentarios.html">
+                        <li>Comentários</li>
+                    </a>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
